@@ -96,7 +96,7 @@ class FactoryService implements
 			[],
 			$uri,
 			$method,
-			"php://memory"
+			"php://memory",
 		);
 
 		assert($Ret instanceof ServerRequestInterface);
@@ -152,7 +152,7 @@ class FactoryService implements
 			$size,
 			$error,
 			$clientFilename,
-			$clientMediaType
+			$clientMediaType,
 		);
 
 		assert($Ret instanceof UploadedFileInterface);

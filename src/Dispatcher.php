@@ -8,8 +8,13 @@ use Psr\Http\Message\ServerRequestInterface;
 class Dispatcher extends AbstractConstructOnce implements DispatcherInterface {
 
 	private RequestHandlerInterface $RequestHandler;
+
 	private ServerRequestInterface $ServerRequest;
 
+	/**
+	 * @param \Laz0r\Http\RequestHandlerInterface $RequestHandler
+	 * @param \Psr\Http\Message\ServerRequestInterface $ServerRequest
+	 */
 	public function __construct(
 		RequestHandlerInterface $RequestHandler,
 		ServerRequestInterface $ServerRequest

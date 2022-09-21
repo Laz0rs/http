@@ -15,24 +15,24 @@ interface ResponseInterface extends PsrResponseInterface {
 
 	/**
 	 * @param string $name
-	 * @param mixed  $default
+	 * @param mixed $default
 	 *
 	 * @return mixed
 	 */
 	public function getAttribute(string $name, $default = null);
 
 	/**
-	 * @param string          $name
-	 * @param string|string[] $value
+	 * @param string $name
+	 * @param string[]|string $value
 	 *
-	 * @return static
 	 * @throws \InvalidArgumentException
+	 * @return static
 	 */
 	public function withAddedHeader($name, $value);
 
 	/**
 	 * @param string $name
-	 * @param mixed  $value
+	 * @param mixed $value
 	 *
 	 * @return static
 	 */
@@ -47,11 +47,11 @@ interface ResponseInterface extends PsrResponseInterface {
 	public function withBody(StreamInterface $Body);
 
 	/**
-	 * @param string          $name
-	 * @param string|string[] $value
+	 * @param string $name
+	 * @param string[]|string $value
 	 *
-	 * @return static
 	 * @throws \InvalidArgumentException
+	 * @return static
 	 */
 	public function withHeader($name, $value);
 
@@ -63,11 +63,11 @@ interface ResponseInterface extends PsrResponseInterface {
 	public function withProtocolVersion($version);
 
 	/**
-	 * @param int    $code
+	 * @param int $code
 	 * @param string $reasonPhrase
 	 *
-	 * @return static
 	 * @throws \InvalidArgumentException
+	 * @return static
 	 */
 	public function withStatus($code, $reasonPhrase = "");
 

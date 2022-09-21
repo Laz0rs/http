@@ -9,6 +9,9 @@ abstract class AbstractOuterRequestHandler extends AbstractConstructOnce impleme
 
 	private RequestHandlerInterface $Handler;
 
+	/**
+	 * @param \Laz0r\Http\RequestHandlerInterface $Handler
+	 */
 	public function __construct(RequestHandlerInterface $Handler) {
 		parent::__construct();
 

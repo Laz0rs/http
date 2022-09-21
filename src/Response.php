@@ -6,7 +6,9 @@ use Laminas\Diactoros\Response as ResponseBase;
 
 class Response extends ResponseBase implements ResponseInterface {
 
-	/** @psalm-var array<string, mixed> */
+	/**
+	 * @psalm-var array<string, mixed>
+	 */
 	private array $attributes = [];
 
 	public function getAttributes(): array {
