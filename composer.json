@@ -1,0 +1,45 @@
+{
+	"autoload": {
+		"psr-4": {
+			"Laz0r\\Http\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Laz0r\\HttpTest\\": "test/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		}
+	},
+	"description": "PSR-7 response with attributes",
+	"keywords": [
+		"Laz0r",
+		"PSR-7",
+		"http",
+		"psr7"
+	],
+	"license": "MIT",
+	"name": "laz0r/http",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/Laz0rs/http"
+		}
+	],
+	"require": {
+		"laminas/laminas-diactoros": "^2.17.0",
+		"laz0r/util": "^1.0.0",
+		"php": "^7.4 || ~8.0.0",
+		"psr/http-factory": "^1.0.1",
+		"psr/http-message": "^1.0.1"
+	},
+	"require-dev": {
+		"fig-r/psr2r-sniffer": "^1.4.0",
+		"phpunit/phpunit": "9.5.16",
+		"vimeo/psalm": "^4.27"
+	},
+	"type": "library"
+}
